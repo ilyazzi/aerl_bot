@@ -1,0 +1,8 @@
+services:
+  - type: cron
+    name: aeroflot-price-checker
+    runtime: python
+    schedule: "*/8 * * *"  # every 8 hours
+    plan: free
+    buildCommand: ""
+    startCommand: "python main.py"
